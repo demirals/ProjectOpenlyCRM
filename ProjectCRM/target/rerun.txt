@@ -1,0 +1,3 @@
+file:src/test/resources/features/Announcement.feature:14
+file:src/test/resources/features/Poll.feature:69
+file:src/test/resources/features/Theme.feature:43
