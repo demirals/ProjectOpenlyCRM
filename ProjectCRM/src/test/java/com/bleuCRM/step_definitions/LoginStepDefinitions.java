@@ -32,6 +32,7 @@ public class LoginStepDefinitions {
         loginPage.usernameBox.sendKeys(ConfigurationReader.get("username"));
         loginPage.passwordBox.sendKeys(ConfigurationReader.get("password"));
         loginPage.logInButton.click();
+        System.out.println("Hello World_1");
 
     }
 
@@ -40,6 +41,7 @@ public class LoginStepDefinitions {
 
         BrowserUtils.waitForPageToLoad(1);
         Assert.assertEquals(expectedTitle, Driver.get().getTitle());
+        System.out.println("Hello World");
 
 
     }
