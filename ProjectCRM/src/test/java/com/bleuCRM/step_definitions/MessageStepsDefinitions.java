@@ -21,7 +21,7 @@ import java.util.List;
 
 public class MessageStepsDefinitions {
 
-    WebDriverWait wait = new WebDriverWait(Driver.get(), 3);
+ //   WebDriverWait wait = new WebDriverWait(Driver.get(), 3);
     String demoMsg = new Faker().lordOfTheRings().character();
 
     @Given("user on the login page")
@@ -42,7 +42,7 @@ public class MessageStepsDefinitions {
 
     @Given("user should be able to click on {string} icon")
     public void user_should_be_able_to_click_on_icon(String msgBoxFunc) {
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@title='" + msgBoxFunc + "']")));
+   //     wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@title='" + msgBoxFunc + "']")));
         Assert.assertTrue(msgBoxFunc + " is clickable", Driver.get().findElement(By.xpath("//*[@title='" + msgBoxFunc + "']")).isDisplayed());
     }
 
